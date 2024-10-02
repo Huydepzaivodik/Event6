@@ -49,23 +49,23 @@
   object-fit: cover;
 }
 
-.landing-page-QH .vector-abstract-3 {
-  height: 815px;
-  top: 6822px;
-  position: absolute;
-  width: 1600px;
-  left: 18px;
-  object-fit: cover;
-}
+/*.landing-page-QH .vector-abstract-3 {*/
+/*  height: 815px;*/
+/*  top: 6822px;*/
+/*  position: absolute;*/
+/*  width: 1600px;*/
+/*  left: 18px;*/
+/*  object-fit: cover;*/
+/*}*/
 
-.landing-page-QH .vector-abstract-4 {
-  height: 1606px;
-  top: 694px;
-  position: absolute;
-  width: 1600px;
-  left: 18px;
-  object-fit: cover;
-}
+/*.landing-page-QH .vector-abstract-4 {*/
+/*  height: 1606px;*/
+/*  top: 694px;*/
+/*  position: absolute;*/
+/*  width: 1600px;*/
+/*  left: 18px;*/
+/*  object-fit: cover;*/
+/*}*/
 
 .landing-page-QH .ti-sao-chn-chng-ti {
   position: absolute;
@@ -1303,7 +1303,7 @@
   position: absolute;
   width: 1600px;
   height: 403px;
-  top: 7234px;
+  top: 5800px;
   left: 19px;
 }
 
