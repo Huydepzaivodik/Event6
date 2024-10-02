@@ -530,30 +530,115 @@
             </p>
             <img class="unsplash-blgofmpilr" src="img/unsplash-blgofmpilr0.png" />
             <div class="component-3">
-              <div class="component-4">
-                <p class="text-wrapper-31">EVENT6 có thể tổ chức loại sự kiện nào?</p>
-                <img class="img-3" src="img/ep-arrow-up-bold-9.svg" onclick="toggleAccordion(event)" />
-              </div>
-              <div class="accordion-content" style="display: none;">
-                <p>Đây là đoạn văn bản mô tả loại sự kiện mà EVENT6 có thể tổ chức...</p>
+              <div class="comp-4">
+                <div class="component-4">
+                  <p class="text-wrapper-31">EVENT6 có thể tổ chức loại sự kiện nào?</p>
+                  <img class="img-3" src="img/ep-arrow-up-bold-9.svg" id="toggle-button" style="cursor: pointer;" />
+                </div>
+
+                <div id="content" style="display: none;margin-left: 30px; width: 700px; margin-bottom: 10px" class="q-a1">
+                  <p>EVENT6 có thể tổ chức các sự kiện hội nghị, hội thảo và các sự kiện khác với quy mô lớn nhỏ tùy theo yêu cầu của khách hàng.</p>
+                </div>
+                <script>
+                  document.getElementById("toggle-button").addEventListener("click", function() {
+                    var content = document.getElementById("content");
+                    if (content.style.display === "none") {
+                      content.style.display = "block";
+                    } else {
+                      content.style.display = "none";
+                    }
+                  });
+                </script>
               </div>
 
-              <div class="component-4">
+            <div class="comp-4-1">
+              <div class="component-4-1">
                 <p class="text-wrapper-32">Chi phí tổ chức sự kiện tại EVENT6 là bao nhiêu?</p>
-                <img class="img-3" src="img/ep-arrow-up-bold-9.svg" />
+                <img class="img-3" src="img/ep-arrow-up-bold-9.svg" id="toggle-button1" style="cursor: pointer;" />
               </div>
-              <div class="component-5">
-                <p class="text-wrapper-32">EVENT6 có hỗ trợ lựa chọn địa điểm và nhà cung cấp dịch vụ không?</p>
-                <img class="img-3" src="img/ep-arrow-up-bold-9.svg" />
+              <div id="content-1" style="display: none;margin-left: 30px; width: 700px; margin-bottom: 10px" class="q-a2">
+                <p>EVENT6 có thể tổ chức các sự kiện hội nghị, hội thảo và các sự kiện khác với quy mô lớn nhỏ tùy theo yêu cầu của khách hàng.</p>
               </div>
-              <div class="component-5">
-                <p class="text-wrapper-32">Tôi cần đặt dịch vụ trước bao lâu?</p>
-                <img class="img-3" src="img/ep-arrow-up-bold-9.svg" />
+              <script>
+                document.getElementById("toggle-button1").addEventListener("click", function() {
+                  var content = document.getElementById("content-1");
+                  if (content.style.display === "none") {
+                    content.style.display = "block";
+                  } else {
+                    content.style.display = "none";
+                  }
+                });
+              </script>
+            </div>
+
+
+              <div class="comp-5-1">
+                <div class="component-5-1">
+                  <p class="text-wrapper-32">EVENT6 có hỗ trợ lựa chọn địa điểm và nhà cung cấp dịch vụ không?</p>
+                  <img class="img-3" src="img/ep-arrow-up-bold-9.svg" id="toggle-button2" style="cursor: pointer;"  />
+                </div>
+
+                <div id="content-2" style="display: none;margin-left: 30px; width: 700px; margin-bottom: 10px" class="q-a2">
+                  <p>EVENT6 có thể tổ chức các sự kiện hội nghị, hội thảo và các sự kiện khác với quy mô lớn nhỏ tùy theo yêu cầu của khách hàng.</p>
+                </div>
+                <script>
+                  document.getElementById("toggle-button2").addEventListener("click", function() {
+                    var content = document.getElementById("content-2");
+                    if (content.style.display === "none") {
+                      content.style.display = "block";
+                    } else {
+                      content.style.display = "none";
+                    }
+                  });
+                </script>
               </div>
-              <div class="component-5">
+
+
+              <div class="comp-5-2">
+                <div class="component-5-2">
+                  <p class="text-wrapper-32">Tôi cần đặt dịch vụ trước bao lâu?</p>
+                  <img class="img-3" src="img/ep-arrow-up-bold-9.svg"  id="toggle-button3" style="cursor: pointer;" />
+                </div>
+
+                <div id="content-3" style="display: none;margin-left: 30px; width: 700px; margin-bottom: 10px" class="q-a2">
+                  <p>EVENT6 có thể tổ chức các sự kiện hội nghị, hội thảo và các sự kiện khác với quy mô lớn nhỏ tùy theo yêu cầu của khách hàng.</p>
+                </div>
+
+                <script>
+                  document.getElementById("toggle-button3").addEventListener("click", function() {
+                    var content = document.getElementById("content-3");
+                    if (content.style.display === "none") {
+                      content.style.display = "block";
+                    } else {
+                      content.style.display = "none";
+                    }
+                  });
+                </script>
+              </div>
+
+            <div class="comp-5-3">
+              <div class="component-5-3">
                 <p class="text-wrapper-32">Tôi có thể thay đổi kế hoạch sự kiện sau khi đã thỏa thuận không?</p>
-                <img class="img-3" src="img/ep-arrow-up-bold-9.svg" />
+                <img class="img-3" src="img/ep-arrow-up-bold-9.svg"  id="toggle-button4" style="cursor: pointer;" />
               </div>
+                <div id="content-4" style="display: none;margin-left: 30px; width: 700px; margin-bottom: 10px" class="q-a2">
+                  <p>EVENT6 có thể tổ chức các sự kiện hội nghị, hội thảo và các sự kiện khác với quy mô lớn nhỏ tùy theo yêu cầu của khách hàng.</p>
+                </div>
+
+                <script>
+                  document.getElementById("toggle-button4").addEventListener("click", function() {
+                    var content = document.getElementById("content-4");
+                    if (content.style.display === "none") {
+                      content.style.display = "block";
+                    } else {
+                      content.style.display = "none";
+                    }
+                  });
+                </script>
+
+              </div>
+
+
             </div>
           </div>
           <div class="frame-24">
@@ -574,14 +659,13 @@
                   <div class="frame-30">
                     <img class="img-3" src="img/vuesax-linear-sms-1.svg" />
                     <p class="div-3">
-                      <span class="text-wrapper-34">Email: event6</span>
-                      <span class="text-wrapper-35">.agency@gmail.com</span>
+                      <span class="text-wrapper-34">Email: event6.agency@gmail.com</span>
                     </p>
                   </div>
                   <div class="frame-31">
                     <img class="img-3" src="img/tabler-world.svg" />
                     <p class="div-3">
-                      <span class="text-wrapper-34">Website: </span> <span class="text-wrapper-35">www.event6.com</span>
+                      <span class="text-wrapper-34">Website: </span> <span class="text-wrapper-35">https://event6.net/</span>
                     </p>
                   </div>
                 </div>
@@ -679,7 +763,7 @@
                   <input class="frame-42" type="text" name="phone" placeholder="Số điện thoại...">
                   <input class="frame-43" type="text" name="business" placeholder="Lĩnh vực kinh doanh...">
                   <input class="frame-46" type="email" name="email" placeholder="Email...">
-                  <textarea class="frame-44" style="font-family: Arial" name="message" placeholder="Chi tiết nhu cầu..."></textarea>
+                  <textarea class="frame-44" name="message" placeholder="Chi tiết nhu cầu..."></textarea>
                   <div class="text-wrapper-44">ĐĂNG KÝ TƯ VẤN</div>
                   <button class="component-12" onclick="sendMail(event)"><b style="color: white">Hoàn tất đăng ký</b></button>
                 </form>
