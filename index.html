@@ -21,12 +21,61 @@
       });
     })();
 
-    function sendMail() {
+    // function sendMail() {
+    //   const SERVICE_ID = 'service_qckbwql';
+    //   const TEMPLATE_ID = 'template_7e0e1jg';
+    //
+    //   emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form')
+    // }
+
+
+    function sendMail(event) {
+      event.preventDefault(); // Ngăn không cho form gửi mặc định để kiểm tra trước
+
+      // Lấy các giá trị của các ô input
+      var name = document.querySelector("input[name='name']").value.trim();
+      var phone = document.querySelector("input[name='phone']").value.trim();
+      var business = document.querySelector("input[name='business']").value.trim();
+      var email = document.querySelector("input[name='email']").value.trim();
+      var message = document.querySelector("textarea[name='message']").value.trim();
+
+      // Kiểm tra xem ô nào trống
+      if (name === "") {
+        alert("Vui lòng nhập họ và tên.");
+        return false;
+      }
+      if (phone === "") {
+        alert("Vui lòng nhập số điện thoại.");
+        return false;
+      }
+      if (business === "") {
+        alert("Vui lòng nhập lĩnh vực kinh doanh.");
+        return false;
+      }
+      if (email === "") {
+        alert("Vui lòng nhập email.");
+        return false;
+      }
+      if (message === "") {
+        alert("Vui lòng nhập chi tiết nhu cầu.");
+        return false;
+      }
+
+      // Nếu không có ô nào trống, tiến hành gửi form qua EmailJS
       const SERVICE_ID = 'service_qckbwql';
       const TEMPLATE_ID = 'template_7e0e1jg';
 
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form')
+              .then(() => {
+                alert('Đăng ký thành công!');
+              }, (error) => {
+                alert('Đã có lỗi xảy ra khi gửi. Vui lòng thử lại.');
+                console.log('FAILED...', error);
+              });
+
+      return true;
     }
+
   </script>
   <body>
     <div class="landing-page-QH">
@@ -634,7 +683,7 @@
                   <input class="frame-46" type="email" name="email" placeholder="Email...">
                   <textarea class="frame-44" style="font-family: Arial" name="message" placeholder="Chi tiết nhu cầu..."></textarea>
                   <div class="text-wrapper-44">ĐĂNG KÝ TƯ VẤN</div>
-                  <button class="component-12" onclick="sendMail()"><b style="color: white">Hoàn tất đăng ký</b></button>
+                  <button class="component-12" onclick="sendMail(event)"><b style="color: white">Hoàn tất đăng ký</b></button>
                 </form>
                 <img class="unsplash-qfcqw" src="img/unsplash-f2krf-qfcqw.png" />
               </div>
@@ -660,7 +709,7 @@
           <div class="frame-45">
             <div class="overlap-group-9">
               <div class="rectangle-4"></div>
-              <img class="subtract-3" src="img/subtract-1.svg" />
+              <a href="#"><img class="subtract-3" src="img/subtract-1.svg" /></a>
             </div>
           </div>
         </header>
