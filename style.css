@@ -19,8 +19,10 @@
     width: 1636px;
     height: 7637px;
     top: 86px;
-    left: -18px;
+    left: 50%; /* Đặt phần tử ở giữa */
+    transform: translateX(-50%); /* Dịch chuyển để căn giữa hoàn hảo */
 }
+
 
 .landing-page-QH .vector-abstract {
     position: absolute;
@@ -1500,6 +1502,16 @@
     left: 0;
 }
 
+.landing-page-QH .frame-47 {
+    display: flex;
+    width: 392px;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: -44px;
+    left: 0;
+}
+
 .landing-page-QH .frame-32 {
     position: absolute;
     width: 497px;
@@ -1971,6 +1983,7 @@
 
 .landing-page-QH .component-12 {
     font-family: "Be Vietnam Pro", Helvetica;
+    font-size: 15px;
     display: flex;
     width: 220px;
     align-items: center;
@@ -2052,7 +2065,34 @@
     background-color: #ffffff;
 }
 
+/*.landing-page-QH .component-13 {*/
+/*    border: none;*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    width: 184px;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 10px;*/
+/*    padding: 10px 40px;*/
+/*    position: absolute;*/
+/*    top: 18px;*/
+/*    left: 1228px;*/
+/*    font-family: "Be Vietnam Pro", Helvetica;*/
+/*    background-color: var(--primary);*/
+/*    border-radius: 8px;*/
+/*    overflow: hidden;*/
+/*    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; !* Thêm hiệu ứng chuyển tiếp *!*/
+/*}*/
+
+/*.landing-page-QH .component-13:hover {*/
+/*    background-color: rgba(0, 128, 0, 1); !* Thay đổi màu nền khi hover *!*/
+/*    transform: scale(1.05); !* Tăng kích thước một chút *!*/
+/*    box-shadow: 0px 0px 30px #d4202740; !* Tăng độ mờ của bóng *!*/
+/*}*/
+
+
 .landing-page-QH .component-13 {
+    font-size: 15px;
     border: none;
     color: white;
     display: flex;
@@ -2065,17 +2105,18 @@
     top: 18px;
     left: 1228px;
     font-family: "Be Vietnam Pro", Helvetica;
-    background-color: var(--primary);
+    background: linear-gradient(180deg, rgb(3, 97, 71) 0%, rgb(1.16, 60.78, 44.29) 100%); /* Đổi nền thành gradient */
     border-radius: 8px;
     overflow: hidden;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng chuyển tiếp */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển tiếp */
 }
 
 .landing-page-QH .component-13:hover {
-    background-color: rgba(0, 128, 0, 1); /* Thay đổi màu nền khi hover */
+    background: linear-gradient(180deg, rgb(5, 120, 85) 0%, rgb(3, 75, 60) 100%); /* Đổi màu nền khi hover */
     transform: scale(1.05); /* Tăng kích thước một chút */
-    box-shadow: 0px 0px 30px #d4202740; /* Tăng độ mờ của bóng */
+    box-shadow: 0px 0px 30px #03614740; /* Đổi độ mờ bóng */
 }
+
 
 
 .landing-page-QH .text-wrapper-48 {
